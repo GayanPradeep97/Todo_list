@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="root" prefHeight="466.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ToDoFormController">
+   <children>
+      <Label fx:id="lblWelcomNote" layoutX="214.0" layoutY="15.0" />
+      <Label fx:id="lblUserId" layoutX="463.0" layoutY="15.0" />
+      <ListView fx:id="lstToDoList" layoutX="14.0" layoutY="47.0" prefHeight="415.0" prefWidth="284.0" />
+      <Pane fx:id="setRoot" layoutX="310.0" layoutY="263.0" prefHeight="122.0" prefWidth="307.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="txtAddNew" layoutX="29.0" layoutY="36.0" prefHeight="25.0" prefWidth="249.0" />
+            <Button layoutX="217.0" layoutY="77.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: yellow;" text="Add" />
+            <Label fx:id="txtCheck" layoutX="29.0" layoutY="69.0" prefHeight="17.0" prefWidth="123.0" text="text can not be empty" textFill="#ee0a0a" />
+         </children>
+      </Pane>
+      <TextField fx:id="txtSelectedToDo" layoutX="342.0" layoutY="96.0" prefHeight="25.0" prefWidth="249.0" />
+      <Button fx:id="btnDelete" layoutX="370.0" layoutY="145.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: red;" text="Delete" textFill="#fcfcfc" />
+      <Button fx:id="btnUpdate" layoutX="495.0" layoutY="145.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: green;" text="Update" textFill="WHITE" />
+      <Button layoutX="318.0" layoutY="412.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" style="-fx-background-color: green;" text="Log Out" textFill="WHITE" />
+      <Button layoutX="310.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnAddNewOnAction" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: blue;" text="++Add New" textFill="#fffefe" />
+      <Label fx:id="lblToDoID" layoutX="449.0" layoutY="225.0" prefHeight="17.0" prefWidth="59.0" />
+   </children>
+</AnchorPane>
